@@ -46,3 +46,13 @@ function diffArray(arr1, arr2) {
 }
 
 console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
+// Intermediate Algorithm Scripting: Seek and Destroy
+function destroyer(arr) {
+  // Remove all the values
+  const args = Array.from(arguments).slice(1);
+
+  return arr.filter(el => !args.includes(el));
+}
+
+console.log(destroyerES6([1, 2, 3, 1, 2, 3], 2, 3));
